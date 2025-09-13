@@ -1,0 +1,29 @@
+{
+    "prefix": "lx!",
+    "remote-users": [],
+    "authorized-users": [
+        1390022804786778172,
+        1368365230794473474,
+        1157704479660048395,
+        1363721119756193842,
+        905958579998167140,
+        1275836915471614101,
+        706956947848429661
+    ],
+    "autoreply": {
+        "messages": [
+            "https://github.com/",
+            "https://discord.gg/"
+        ],
+        "channels": [],
+        "users": []
+    },
+    "afk": {
+        "enabled": false,
+        "message": "I am currently AFK. I will respond as soon as possible!"
+    },
+    "copycat": {
+        "users": []
+    },
+    "setnick_backups": {}
+}
