@@ -1,6 +1,6 @@
 # Overview
 
-This is a Discord self-bot (user bot) application built with Python and discord.py named "LevelX". The bot provides automated messaging features including auto-reply functionality, AFK status management, copycat capabilities, and voice channel management. Key features include the "lx!puxar" command for moving users by role to voice channels, "lx!marcar" for mass mentioning users by role, and permission management with "lx!addperm" and "lx!removerperm" commands. All bot messages include "Developer by Tio Sunn'212" branding. It's designed to run as a personal Discord automation tool with customizable behaviors configured through JSON settings.
+This is a Discord self-bot (user bot) application built with Python and discord.py named "LevelX". The bot provides automated messaging features including auto-reply functionality, AFK status management, copycat capabilities, and voice channel management. Key features include the "lx!puxar" command for moving users by role to voice channels, "lx!mover" for moving users by role to specific voice channels without being in one, "lx!marcar" for mass mentioning users by role, and permission management with "lx!addperm" and "lx!removerperm" commands. All bot messages include "Developer by Tio Sunn'212" branding. It's designed to run as a personal Discord automation tool with customizable behaviors configured through JSON settings.
 
 # User Preferences
 
@@ -64,6 +64,11 @@ Preferred communication style: Simple, everyday language.
 - **Unified authorization lists**: remoteuser command now adds users directly to authorized-users list
 - **Enhanced command processing**: Added manual command processing for authorized non-owner users
 - **Fixed message deletion**: Replaced direct ctx.message.delete() with safe_delete_message() to prevent permission errors
+
+## New Voice Channel Features (2025-09-13)
+- **Added lx!mover command**: New voice channel management command that moves users by role to specific channels
+- **Enhanced voice management**: Users can now move role members to any voice channel using ID parameters without being in voice
+- **Improved command syntax**: lx!mover <role_id> <channel_id> provides more flexible voice channel control
 
 ## GitHub Integration Note
 User prefers manual GitHub integration over Replit's automatic integration system. Project files can be downloaded as zip for manual upload to GitHub repositories.
