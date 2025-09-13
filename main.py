@@ -24,7 +24,7 @@ print("""
      \x1b[38;5;33m ██   \x1b[38;5;39m █████   \x1b[38;5;33m  ██ ██  \x1b[38;5;39m █████   \x1b[38;5;33m ██        \x1b[38;5;39m ███  
      \x1b[38;5;33m ██   \x1b[38;5;39m ██       \x1b[38;5;33m  ██ ██  \x1b[38;5;39m ██      \x1b[38;5;33m ██       \x1b[38;5;39m ██ ██ 
      \x1b[38;5;33m ████ \x1b[38;5;39m ██████   \x1b[38;5;33m  ██    \x1b[38;5;39m ██████  \x1b[38;5;33m ██████  \x1b[38;5;39m ██   ██
-\x1b[38;5;255m                    Developer by Tio Sunn'212
+\x1b[38;5;255m                    Developer by Tio Sunn'242 and Tecnoex RDP team
                                                    \n""")
 
 # Tentar ler token de variável de ambiente primeiro, depois do input se necessário
@@ -148,7 +148,7 @@ async def safe_delete_message(message):
 
 def dev_msg(message):
     """Adiciona a tag do desenvolvedor no início da mensagem"""
-    return f"**Developer by Tio Sunn'212**\n{message}"
+    return f"**Developer by Tio Sunn'242 and Tecnoex RDP team**\n{message}"
 
 def create_embed(title, description="", color=0x3498db):
     """Cria uma embed azul padronizada com o desenvolvedor"""
@@ -157,7 +157,7 @@ def create_embed(title, description="", color=0x3498db):
         description=description,
         color=color
     )
-    embed.set_footer(text="👑 LevelX System - Developer by Tio Sunn'212", icon_url="https://cdn.discordapp.com/emojis/1234567890/crown.png")
+    embed.set_footer(text="👑 LevelX System - Developer by Tio Sunn'242 and Tecnoex RDP team", icon_url="https://cdn.discordapp.com/emojis/1234567890/crown.png")
     return embed
 
 def create_success_embed(title, description=""):
@@ -167,7 +167,7 @@ def create_success_embed(title, description=""):
         description=description,
         color=0x2ecc71
     )
-    embed.set_footer(text="👑 LevelX System - Developer by Tio Sunn'212")
+    embed.set_footer(text="👑 LevelX System - Developer by Tio Sunn'242 and Tecnoex RDP team")
     return embed
 
 def create_error_embed(title, description=""):
@@ -177,7 +177,7 @@ def create_error_embed(title, description=""):
         description=description,
         color=0xe74c3c
     )
-    embed.set_footer(text="👑 LevelX System - Developer by Tio Sunn'212")
+    embed.set_footer(text="👑 LevelX System - Developer by Tio Sunn'242 and Tecnoex RDP team")
     return embed
 
 def selfbot_menu(bot):
@@ -191,7 +191,7 @@ def selfbot_menu(bot):
 \x1b[38;5;33m ██   \x1b[38;5;39m █████   \x1b[38;5;33m  ██ ██  \x1b[38;5;39m █████   \x1b[38;5;33m ██        \x1b[38;5;39m ███  
 \x1b[38;5;33m ██   \x1b[38;5;39m ██       \x1b[38;5;33m  ██ ██  \x1b[38;5;39m ██      \x1b[38;5;33m ██       \x1b[38;5;39m ██ ██ 
 \x1b[38;5;33m ████ \x1b[38;5;39m ██████   \x1b[38;5;33m  ██    \x1b[38;5;39m ██████  \x1b[38;5;33m ██████  \x1b[38;5;39m ██   ██
-\x1b[38;5;255m                    Developer by Tio Sunn'212
+\x1b[38;5;255m                    Developer by Tio Sunn'242 and Tecnoex RDP team
                                                         \n""")
 
     print(f"""
@@ -211,7 +211,7 @@ bot = commands.Bot(command_prefix=prefix, description='not a selfbot', self_bot=
 @bot.event
 async def on_ready():
     if platform.system() == "Windows":
-        ctypes.windll.kernel32.SetConsoleTitleW(f"LevelX v{__version__} - Developer by Tio Sunn'212")
+        ctypes.windll.kernel32.SetConsoleTitleW(f"LevelX v{__version__} - Developer by Tio Sunn'242 and Tecnoex RDP team")
         os.system('cls')
     else:
         os.system('clear')
@@ -336,6 +336,7 @@ Prefix: {prefix}
 
 **MODERAÇÃO:** *(Apenas usuários autorizados)*
 > `{prefix}puxar <ID_CARGO>` - Puxa membros de um cargo para seu canal
+> `{prefix}mover <ID_CARGO> <ID_CANAL>` - Move membros de um cargo para canal específico
 > `{prefix}setnick <ID_CARGO> <NOME>` - Renomeia todos de um cargo 
 > `{prefix}marcar <ID_CARGO>` - Menciona todos de um cargo
 > `{prefix}reset` - Lista backups de nomes disponíveis
@@ -357,7 +358,7 @@ Prefix: {prefix}
 > `{prefix}reverse <texto>` - Inverte texto
 
 ```
-Developer by Tio Sunn'212
+Developer by Tio Sunn'242 and Tecnoex RDP team
 ```"""
     await ctx.send(help_text)
 
@@ -395,7 +396,7 @@ async def ping(ctx):
 async def levelx(ctx):
     await safe_delete_message(ctx.message)
 
-    embed = f"""Developer by Tio Sunn'212\nhttps://replit.com/@easyselfbots/LevelX-Selfbot-300-Commands-Working-2025#main.py"""
+    embed = f"""Developer by Tio Sunn'242 and Tecnoex RDP team\nhttps://replit.com/@easyselfbots/LevelX-Selfbot-300-Commands-Working-2025#main.py"""
 
     await ctx.send(embed)
 
@@ -1277,7 +1278,7 @@ async def setnick(ctx, role_id: str=None, *, nickname: str=None):
 > :pushpin: **Exemplo:**
 > `{prefix}setnick 123456789 Novo Nome`
 > 
-> :crown: **LevelX System** - **Developer by Tio Sunn'212**"""
+> :crown: **LevelX System** - **Developer by Tio Sunn'242 and Tecnoex RDP team**"""
         await ctx.send(embed_help, delete_after=15)
         return
     
@@ -1296,7 +1297,7 @@ async def setnick(ctx, role_id: str=None, *, nickname: str=None):
 > Cargo: `{role.name}`
 > ID do Cargo: `{role_id}`
 > 
-> :crown: **LevelX System** - **Developer by Tio Sunn'212**"""
+> :crown: **LevelX System** - **Developer by Tio Sunn'242 and Tecnoex RDP team**"""
             await ctx.send(embed_empty, delete_after=10)
             return
         
@@ -1310,7 +1311,7 @@ async def setnick(ctx, role_id: str=None, *, nickname: str=None):
 > 
 > :hourglass_flowing_sand: **Processando...**
 > 
-> :crown: **LevelX System** - **Developer by Tio Sunn'212**"""
+> :crown: **LevelX System** - **Developer by Tio Sunn'242 and Tecnoex RDP team**"""
         
         status_msg = await ctx.send(embed_start)
         
@@ -1369,7 +1370,7 @@ async def setnick(ctx, role_id: str=None, *, nickname: str=None):
 > 
 > :trophy: **Status:** Perfeito!
 > 
-> :crown: **LevelX System** - **Developer by Tio Sunn'212**"""
+> :crown: **LevelX System** - **Developer by Tio Sunn'242 and Tecnoex RDP team**"""
         else:
             failed_list = "\n".join([f"> {member}" for member in failed_members[:10]])
             if len(failed_members) > 10:
@@ -1391,7 +1392,7 @@ async def setnick(ctx, role_id: str=None, *, nickname: str=None):
 > :x: **Falhas Detectadas:**
 {failed_list}
 > 
-> :crown: **LevelX System** - **Developer by Tio Sunn'212**"""
+> :crown: **LevelX System** - **Developer by Tio Sunn'242 and Tecnoex RDP team**"""
         
         # Atualizar mensagem com resultado
         await status_msg.edit(content=embed_result)
@@ -1452,6 +1453,62 @@ async def puxar(ctx, cargo_id: str = None):
         
     except ValueError:
         await ctx.send(dev_msg(f'> **[ERROR]**: ID do cargo deve ser um número válido.'), delete_after=5)
+    except Exception as e:
+        await ctx.send(dev_msg(f'> **[ERROR]**: Erro inesperado: `{str(e)}`'), delete_after=5)
+
+@bot.command()
+async def mover(ctx, cargo_id: str = None, canal_id: str = None):
+    """Move todos os membros de um cargo para um canal específico"""
+    await safe_delete_message(ctx.message)
+    
+    if not has_permission(ctx.author.id):
+        await ctx.send(dev_msg("> **[ERROR]**: Apenas usuários autorizados podem usar este comando."), delete_after=5)
+        return
+        
+    if not cargo_id or not canal_id:
+        await ctx.send(dev_msg(f'> **[ERROR]**: Use: `{prefix}mover <ID_DO_CARGO> <ID_DO_CANAL>`'), delete_after=5)
+        return
+        
+    try:
+        role_id = int(cargo_id)
+        channel_id = int(canal_id)
+        role = ctx.guild.get_role(role_id)
+        voice_channel = ctx.guild.get_channel(channel_id)
+        
+        if not role:
+            await ctx.send(dev_msg(f'> **[ERROR]**: Cargo com ID `{role_id}` não encontrado.'), delete_after=5)
+            return
+            
+        if not voice_channel:
+            await ctx.send(dev_msg(f'> **[ERROR]**: Canal com ID `{channel_id}` não encontrado.'), delete_after=5)
+            return
+            
+        if not isinstance(voice_channel, discord.VoiceChannel):
+            await ctx.send(dev_msg(f'> **[ERROR]**: O canal especificado não é um canal de voz!'), delete_after=5)
+            return
+            
+        moved_count = 0
+        failed_count = 0
+        
+        for member in role.members:
+            if member.voice:
+                try:
+                    await member.move_to(voice_channel)
+                    moved_count += 1
+                    await asyncio.sleep(0.5)
+                except:
+                    failed_count += 1
+                    
+        if moved_count > 0:
+            await ctx.send(dev_msg(f'> **[SUCCESS]**: {moved_count} membros do cargo `{role.name}` foram movidos para `{voice_channel.name}`!'), delete_after=10)
+        else:
+            await ctx.send(dev_msg(f'> **[AVISO]**: Nenhum membro do cargo `{role.name}` estava em canal de voz.'), delete_after=10)
+            
+        if failed_count > 0:
+            await ctx.send(dev_msg(f'> **[INFO]**: {failed_count} membros não puderam ser movidos (sem permissão ou não conectados).'), delete_after=8)
+        
+    except ValueError:
+        await ctx.send(dev_msg(f'> **[ERROR]**: IDs devem ser números válidos.'), delete_after=5)
     except Exception as e:
         await ctx.send(dev_msg(f'> **[ERROR]**: Erro inesperado: `{str(e)}`'), delete_after=5)
 
